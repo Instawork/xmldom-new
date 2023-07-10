@@ -1,6 +1,6 @@
 {
-  "name": "@xmldom/xmldom",
-  "version": "0.7.11",
+  "name": "xmldom-new-instawork",
+  "version": "0.0.0",
   "description": "A pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module.",
   "keywords": [
     "w3c",
@@ -12,10 +12,10 @@
     "XMLSerializer",
     "ponyfill"
   ],
-  "homepage": "https://github.com/xmldom/xmldom",
+  "homepage": "https://github.com/Instawork/xmldom-new",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xmldom/xmldom.git"
+    "url": "git://github.com/Instawork/xmldom-new.git"
   },
   "main": "lib/index.js",
   "types": "index.d.ts",
@@ -33,7 +33,9 @@
     "stryker:dry-run": "stryker run -m '' --reporters progress",
     "test": "jest",
     "testrelease": "npm test && eslint lib",
-    "release": "np --no-yarn --test-script testrelease --branch release-0.7.x --tag lts patch"
+    "release:patch": "npm version patch && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:major": "npm version major && npm publish && git push --follow-tags"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -54,7 +56,7 @@
     "yauzl": "^2.10.0"
   },
   "bugs": {
-    "url": "https://github.com/xmldom/xmldom/issues"
+    "url": "https://github.com/Instawork/xmldom-new/issues"
   },
   "license": "MIT"
 }
