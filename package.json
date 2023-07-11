@@ -1,6 +1,6 @@
 {
   "name": "@instawork/xmldom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module.",
   "keywords": [
     "w3c",
