@@ -1,6 +1,6 @@
 /// <reference lib="dom" />
 
-declare module "@xmldom/xmldom" {
+declare module "@instawork/xmldom" {
   var DOMParser: DOMParserStatic;
   var XMLSerializer: XMLSerializerStatic;
   var DOMImplementation: DOMImplementationStatic;
